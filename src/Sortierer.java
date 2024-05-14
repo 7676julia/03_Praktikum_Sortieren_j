@@ -21,15 +21,17 @@ public abstract class Sortierer {
     }
 
     //Methode zum Messen der Zeit ? (steht nicht in Blatt) -> noch mit der drunter zusammen packen
-        public void messen() {
-        vorSortierung = System.currentTimeMillis();
-        sortieren();
-        nachSortierung = System.currentTimeMillis();
-    }
+    //public void messen() {
+      //  vorSortierung = System.currentTimeMillis();
+        //sortieren();
+        //nachSortierung = System.currentTimeMillis();
+    //}
     
     //Berechnung der Zeitdauer
     public long getOperations() {
-        
+        vorSortierung = System.currentTimeMillis();
+        sortieren();
+        nachSortierung = System.currentTimeMillis();
         return nachSortierung - vorSortierung;
     }
     
