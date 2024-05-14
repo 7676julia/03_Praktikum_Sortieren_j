@@ -3,9 +3,9 @@ import java.util.List;
 
 public abstract class Sortierer {
    
-    List<Integer> liste = new ArrayList<>();
-    long vorSortierung;
-    long nachSortierung;
+    protected List<Integer> liste = new ArrayList<>();
+    protected long vorSortierung;
+    protected long nachSortierung;
        
     public Sortierer (List<Integer> liste) {
         //Objetreferenz (this.liste) zeigt auf Kopie der Liste die übergeben wurde
@@ -20,8 +20,8 @@ public abstract class Sortierer {
         return sortieren(liste);
     }
 
-    //Methode zum Messen der Zeit ? (steht nicht in Blatt)
-    public void messen() {
+    //Methode zum Messen der Zeit ? (steht nicht in Blatt) -> noch mit der drunter zusammen packen
+        public void messen() {
         vorSortierung = System.currentTimeMillis();
         sortieren();
         nachSortierung = System.currentTimeMillis();
@@ -29,6 +29,7 @@ public abstract class Sortierer {
     
     //Berechnung der Zeitdauer
     public long getOperations() {
+        
         return nachSortierung - vorSortierung;
     }
     

@@ -29,6 +29,6 @@ public class Ausgabe {
 
     //Info über die Zeitdauer
     public static void zeit (long zeit) {
-        System.out.println("Benötigte Rechenzeit: " + zeit + "ms");
+        System.out.println("Benötigte Rechenzeit: " + zeit + "s");
     }
 }
