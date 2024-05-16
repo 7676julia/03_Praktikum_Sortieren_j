@@ -18,9 +18,9 @@ public class Main {
         Ausgabe.list(ArrayListe);
         Ausgabe.InsertSort();
         Sortierer insertSortiererObjekt = new insertSortierer(ArrayListe);
-        insertSortiererObjekt.sortieren(ArrayListe);
+        //insertSortiererObjekt.sortieren(ArrayListe);
         //sortierte Liste ausgeben
-        Ausgabe.list(ArrayListe);    
+        Ausgabe.list(insertSortiererObjekt.sortieren(ArrayListe));    
         Ausgabe.zeit(insertSortiererObjekt.getOperations());
 
 

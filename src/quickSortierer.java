@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class quickSortierer extends Sortierer{
@@ -6,6 +7,7 @@ public class quickSortierer extends Sortierer{
         super(liste);
     }
     protected List<Integer> sortieren(List<Integer> liste) {
+       
         return liste;
     }
 }
