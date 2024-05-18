@@ -25,8 +25,7 @@ public class mergeSortierer extends Sortierer{
         }
         ersteHaelfte = sortieren(ersteHaelfte);
         zweiteHaelfte = sortieren(zweiteHaelfte);
-        List<Integer> combinedList = combine(ersteHaelfte, zweiteHaelfte);
-        return combinedList;
+        return combine(ersteHaelfte, zweiteHaelfte);
     }
     
     public List<Integer> combine (List<Integer> a, List<Integer> b) {
