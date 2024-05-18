@@ -26,7 +26,10 @@ public class Main {
         Ausgabe.list(quickSortiererObjekt.sortieren(ArrayListe));
         Ausgabe.zeit(quickSortiererObjekt.getOperations());
 
-
+        Sortierer mergeSortiererObjekt = new mergeSortierer(ArrayListe);
+        Ausgabe.mergeSort();
+        Ausgabe.list(mergeSortiererObjekt.sortieren(ArrayListe));
+        Ausgabe.zeit(mergeSortiererObjekt.getOperations());
 
     }
     
