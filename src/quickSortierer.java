@@ -19,7 +19,7 @@ public class quickSortierer extends Sortierer{
         else {
             int pivot = liste.get(0);
             liste.remove(0);
-            for (int i=0; i> liste.size();i++){
+            for (int i=0; i<liste.size();i++){
                 //wenn das Element kleiner oder gleich dem Pivot ist, wird es in die erste Liste eingefügt
                 if (liste.get(i) <= pivot){
                     ersteListe.add(liste.get(i));
@@ -28,11 +28,11 @@ public class quickSortierer extends Sortierer{
                 else {
                     zweiteListe.add(liste.get(i));
                 }
-                sortierteListe.addAll(sortieren(ersteListe));
-                sortierteListe.add(pivot);
-                sortierteListe.addAll(sortieren(zweiteListe));
             }
+            sortierteListe.addAll(sortieren(ersteListe));
+            sortierteListe.add(pivot);
+            sortierteListe.addAll(sortieren(zweiteListe));
         }
-        return liste;
+        return sortierteListe;
     }
 }

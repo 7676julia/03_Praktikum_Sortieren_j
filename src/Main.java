@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
         
         //Array Liste erstellen
         ArrayList<Integer> ArrayListe = new ArrayList<>();
@@ -18,10 +17,14 @@ public class Main {
         Ausgabe.list(ArrayListe);
         Ausgabe.InsertSort();
         Sortierer insertSortiererObjekt = new insertSortierer(ArrayListe);
-        //insertSortiererObjekt.sortieren(ArrayListe);
         //sortierte Liste ausgeben
         Ausgabe.list(insertSortiererObjekt.sortieren(ArrayListe));    
         Ausgabe.zeit(insertSortiererObjekt.getOperations());
+
+        Sortierer quickSortiererObjekt = new quickSortierer(ArrayListe);
+        Ausgabe.quickSort();
+        Ausgabe.list(quickSortiererObjekt.sortieren(ArrayListe));
+        Ausgabe.zeit(quickSortiererObjekt.getOperations());
 
 
 
